@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+
+}
+
+.main-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1542044801-30d3e45ae49a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    font-family: 'Pacifico', cursive;
+    filter: brightness(0.9);
+    
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 10px rgb(69, 69, 69);
+    
+}
+
+.btn{
+    padding: 15px 25px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(244, 117, 166);
+
+}
+
+.btn:hover{
+    filter: brightness(0.9);
+}
+
+.hide.main-container{
+    filter: blur(3px) brightness(0.7);
+}
+
+.popup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-image: url(https://images.unsplash.com/photo-1433208406127-d9e1a0a1f1aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80);
+    background-size: cover;
+    background-position:right;
+    background-color: aliceblue;
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    color: rgb(67, 88, 106);
+    box-shadow: 5px 5px 10px rgb(74, 73, 73);
+    opacity: 1;
+    transition: all .7s;
+}
+
+h4{
+    font-size: 30px;
+    color: rgb(252, 172, 153);
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+}
+
+label{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+.popup-btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color:rgb(247, 117, 85);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.popup-btn:hover{
+   background-color: rgb(250, 161, 136);
+}
+
+input{
+    padding: 10px;
+    border: 5px solid rgb(252, 172, 153);
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+input::placeholder{
+    color: lightgray;
+}
+
+.close-icon{
+    position:absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.close-icon:hover{
+    color: rgb(13, 13, 71);
+}
+
+.hide.popup-container{
+    visibility: hidden;
+    opacity: 0;
+
+}
